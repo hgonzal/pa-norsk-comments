@@ -1,0 +1,22 @@
+comments:
+allowedFields: ["name", "comment"]
+branch: "master"
+commitMessage: "New comment in {options.slug}"
+filename: "comment-{@timestamp}"
+format: "yaml"
+generatedFields:
+date:
+type: date
+options:
+format: "iso8601"
+moderation: true
+name: "Hana på norsk"
+path: "{options.slug}"
+requiredFields: ["name", "comment"]
+transforms:
+email: md5
+// Delete this if you do not want to use reCaptcha
+reCaptcha:
+enabled: true
+siteKey: "6Ldg42gaAAAAAHdJsP9PU_FOSUogn47Iw_9aUhM_"
+secret: "rGhKJ1hKy0qZ4xjN00U1lX1bhCOW33V8pcmIoSwSimafyK0ic6Fnh/qSg37iqAWQSKx61FTzy4KYw3ie5kvkCDnlb/zLxGnan8j94a4rHXA15y9Mf1DDnhq2J/035RiQs9ooD1tv+fSNONn75+PxBTvIwqPj+UMREkIdRUQUVJplz+r0TsFc/4OZta68m50jftzKU0IjEZz6ESzkSqwLlsVEt+hBMj1+OBdOC/PCQerzlXqqy7ibSGVTb8bHJ8q9/+W9awrU/8TdNPB9aWP+P2ujpdDh3Y57TtgMbJroXNlLiq2/+Gj0qgNGX4sEWcznvIsaKKqp4p/w4RAwTPNHxw=="
